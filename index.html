@@ -170,6 +170,40 @@
     margin-bottom: 18px;
   }
 
+  .form-steps {
+    list-style: none;
+    margin: 0 0 18px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .form-steps li {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  .form-steps .step-n {
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--accent-strong);
+    flex: none;
+    width: 1em;
+  }
+
+  .form-steps .field { color: var(--ink-soft); }
+
+  .form-steps .arrow { color: var(--ink-faint); }
+
+  .form-steps .answer { color: var(--ink); font-weight: 600; }
+
   .btn {
     appearance: none;
     border: none;
@@ -340,7 +374,11 @@
     <div class="action-card">
       <div class="method">Write</div>
       <div class="detail">Online contact form</div>
-      <div class="subdetail">gov.ca.gov → "an issue" → "Health and Human Services"</div>
+      <ol class="form-steps">
+        <li><span class="step-n">1</span> Go to <strong>gov.ca.gov</strong></li>
+        <li><span class="step-n">2</span> <span class="field">"What is your request or comment about?"</span> <span class="arrow">→</span> <span class="answer">An Active Bill</span></li>
+        <li><span class="step-n">3</span> <span class="field">"What specific bill?"</span> <span class="arrow">→</span> <span class="answer">AB 1924 – Statewide homelessness prevention strategy</span></li>
+      </ol>
       <a class="btn btn-secondary" href="https://www.gov.ca.gov/contact/" target="_blank" rel="noopener">Open the contact form</a>
     </div>
   </div>
