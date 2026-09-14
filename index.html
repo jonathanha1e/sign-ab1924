@@ -74,48 +74,6 @@
 
   .page { max-width: 700px; margin: 0 auto; }
 
-  .eyebrow-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 22px;
-  }
-
-  .eyebrow {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    font-variant-numeric: tabular-nums;
-  }
-
-  .status-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--action-strong);
-    background: color-mix(in srgb, var(--action) 14%, transparent);
-    border: 1px solid color-mix(in srgb, var(--action) 35%, transparent);
-    padding: 5px 12px 5px 10px;
-    border-radius: 100px;
-  }
-
-  .status-pill::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--action);
-    flex: none;
-  }
-
   h1 {
     font-size: clamp(1.9rem, 4.4vw, 2.5rem);
     font-weight: 700;
@@ -128,41 +86,6 @@
     color: var(--ink-soft);
     max-width: 58ch;
     margin-bottom: 30px;
-  }
-
-  .vote-strip {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 34px;
-  }
-
-  .vote-tile {
-    background: var(--card);
-    padding: 16px 14px;
-    text-align: center;
-  }
-
-  .vote-tile .num {
-    font-family: "Source Serif 4", serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    color: var(--ink);
-    display: block;
-  }
-
-  .vote-tile .label {
-    font-size: 0.68rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-top: 3px;
-    display: block;
   }
 
   section { margin-bottom: 40px; }
@@ -380,33 +303,13 @@
 
 <div class="page">
 
-  <div class="eyebrow-row">
-    <span class="eyebrow">AB 1924 · 2025–2026 Session</span>
-    <span class="status-pill">On the Governor's desk</span>
-  </div>
-
   <h1>Tell Governor Newsom to sign AB 1924 and make homelessness prevention a state priority.</h1>
 
   <p class="lede">
-    AB 1924 passed the Legislature with near-unanimous, bipartisan support. It's now sitting on
-    Governor Newsom's desk — and he needs to hear from Californians before he decides whether
-    to sign it.
+    AB 1924 passed the Legislature with strong bipartisan support, and now it's on Governor
+    Newsom's desk. He needs to hear from Californians like yourself to decide whether to sign
+    this bill.
   </p>
-
-  <div class="vote-strip">
-    <div class="vote-tile">
-      <span class="num">77–1</span>
-      <span class="label">Assembly vote</span>
-    </div>
-    <div class="vote-tile">
-      <span class="num">40–0</span>
-      <span class="label">Senate vote</span>
-    </div>
-    <div class="vote-tile">
-      <span class="num">Jul 1, 2027</span>
-      <span class="label">Strategy deadline</span>
-    </div>
-  </div>
 
   <section>
     <div class="section-label">What the bill does</div>
